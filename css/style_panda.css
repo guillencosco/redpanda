@@ -1,0 +1,231 @@
+ html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 15px;
+            background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+            background-repeat: repeat; 
+        }
+        .navbar {
+            border-radius: 5px;
+        }
+        .navbar-nav .nav-link {
+            transition: background-color 0.4s ease, color 0.4s ease;
+            border-radius: 5px;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(0, 0, 0, 0.07);
+            color: #ffffff;
+        }
+        .nav-tabs .nav-link {
+            color: #dc3545;
+            background-color: #ffffff;
+            border: 1px solid #dc3545;
+        }
+        .nav-tabs .nav-link.active {
+            color: #ffffff !important;
+            background-color: #dc3545  !important;
+            border-color: #dc3545 !important;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #f8d7da;
+            color: #a80000;
+            border-color: #dc3545 
+        }
+        .navbar-toggler-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+            background-image: none !important;
+            transform: rotate(90deg);
+        }
+        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+            content: "✕";
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        .btn-donations {
+            transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease !important;
+        }
+        .btn-donations:hover {
+            animation: bubblePop 0.4s ease-out forwards;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.4s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .carousel {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .carousel-inner img {
+            border-radius: 20px;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 20%;
+            opacity: 1;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(220, 53, 69, 0.5);
+            border-radius: 50%;
+            padding: 15px;
+            background-size: 75%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.4s ease;
+        }
+        .carousel-control-prev:hover .carousel-control-prev-icon,
+        .carousel-control-next:hover .carousel-control-next-icon {
+            background-color: rgba(220, 53, 69, 0.8);
+        }
+        .accordion-body img {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .accordion-body img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+        }
+        .accordion-button.collapsed {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #ffe6e6;
+            color: #a80000;
+            box-shadow: none;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .card-img-top:hover {
+            opacity: 0.8;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .card {
+            transition: all 0.2s ease-out;
+        }
+        #modalImage {
+            max-height: 350px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .donation {
+            border-radius: 10px;
+        }
+        .btn-donate {
+            color:#ffffff;
+            background-color: #a80000;
+            transition: all 0.4s ease;
+        }
+        .btn-donate:hover {
+            color: #a80000;
+            border: 1px solid #a80000;
+            background-color: #ffffff;
+        }
+        .btn-reset {
+            color: #a80000;
+            border: 1px solid #a80000;
+            background-color: #ffffff;
+            transition: all 0.4s ease;
+        }
+        .btn-reset:hover {
+            color:#ffffff;
+            background-color: #a80000;
+        }
+
+        footer {
+            border-radius: 10px;
+        }
+        .btn-partner {
+            transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, color 0.4s ease !important;
+        }
+        .btn-partner:hover {
+            animation: bubblePop 0.4s ease-out forwards;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);            
+        }
+        .btn-subscribe {
+            transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+        }
+        .btn-subscribe:hover {
+            animation: bubblePop 0.4s ease-out forwards;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .hide {
+            display: none !important;
+        }    
+        #sectionImages, #sectionCaracteristics, #sectionQuienesSomos, #sectionDonation {
+            scroll-margin-top: 70px; 
+        }
+        .newsletter {
+            cursor: pointer;
+        }
+         .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 52px;
+            height: 52px;
+            background-color: #dc3545;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0.8);
+            text-decoration: none;
+            border: none;
+            outline: none;
+        }
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
+        .scroll-to-top:hover {
+            background-color: #a71d2e;
+            transform: scale(1.08);
+            transition: all 0.2s ease;
+            color: white;
+        }
+        @keyframes bubblePop {
+            0% {
+                transform: scale(1);
+            }
+            60% {
+                transform: scale(1.15); 
+            }
+            100% {
+                transform: scale(1.05); 
+            }
+        }
+        @media (min-width: 900px) {
+            .hero {
+                min-height: 90dvh;
+            }
+        }
+        @media (max-width: 575px) {
+            #sectionImages, #sectionCaracteristics, #sectionQuienesSomos, #sectionDonation {
+                scroll-margin-top: 225px;
+            }
+        }
