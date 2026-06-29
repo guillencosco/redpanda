@@ -79,10 +79,7 @@
                 meta: "Meta 2026: Crear 10 tallers interactivos estables en Nepal y China con capacidad para 25 personas o mas."
             },
         };
-
-
-
-        
+      
         document.addEventListener("DOMContentLoaded", function () {
             const botones = document.querySelectorAll('.view-details');
             const modalElement = document.getElementById('descriptionModal');
