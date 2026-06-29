@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce al fascinante Panda Rojo: descubre sus características únicas, su hábitat natural y los proyectos de conservación dedicados a proteger esta especie en peligro.">
+    <meta name="author" content="Guillén Cosco">
+    <meta name="keywords" content="Panda Rojo, conservación, animales en peligro, proyectos ecológicos">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_panda.css">
+    <link rel="stylesheet" href="components/cookies/styles_cookies_panda.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script_panda.js" defer></script>
+    <script src="components/cookies/script_cookies_panda.js" defer></script>
+    <script src="components/cookies/script_boton_flotante_preferencias.js" defer></script>
+
+
+    <title>Proyecto Panda Rojo | Conservación</title>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+            <div class="container-fluid">
+                <img src="assets/logo.png" alt="Logo Proyecto Panda Rojo" width="45" height="45" class="rounded-pill me-2">
+                <a class="navbar-brand fw-bold" href="#">Panda rojo</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav text-center text-md-start mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#sectionQuienesSomos">Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#sectionImages">Imagenes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#sectionCaracteristics">Características</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#sectionDonation">Donaciones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Proyectos Int.</a>
+                            <ul class="dropdown-menu text-center" role="menu">
+                                <li><a class="dropdown-item" href="https://redpandanetwork.org" target="_blank" rel="noopener noreferrer" role="menuitem"><span aria-hidden="true">🐾</span> Red Panda Network</a></li>
+                                <li><a class="dropdown-item" href="https://www.worldwildlife.org/species/red-panda" target="_blank" rel="noopener noreferrer" role="menuitem"><span aria-hidden="true">🐼</span> World Wildlife Fund</a></li>
+                                <li><a class="dropdown-item" href="https://www.iucnredlist.org" target="_blank" rel="noopener noreferrer" role="menuitem"><span aria-hidden="true">🏛️</span> IUCN Red List</a></li>
+                                <li><a class="dropdown-item" href="https://rizomebamboo.com/reforestation/" target="_blank" rel="noopener noreferrer" role="menuitem"><span aria-hidden="true">🎋</span> Bambu Reforestation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>     
+    <main>
+        <section class="container-fluid py-2 my-1 p-2 mb-2 bg-danger bg-opacity-25 rounded-3 border shadow-sm">
+            <div class="container">
+                <div class="row align-items-center d-flex justify-content-center text-center hero">
+                    <div class="col-md-5 order-1 order-md-0 mb-4 mb-md-0">
+                        <h1 class="display-5 fw-bold text-danger">Proyecto Panda Rojo</h1>
+                        <p class="lead">Descubre la fragilidad de esta especie única y únete a nuestra causa para su conservación.</p>
+                        <a href="#sectionDonation" class="btn btn-danger btn-lg shadow-sm mt-3 btn-donations">Donaciones</a>
+                    </div>
+                    <div class="col-md-7 order-0 order-md-1 mt-4 mt-md-4 text-center">
+                        <img src="assets/photo-hero.webp" alt="Panda rojo durmiendo sobre un árbol" width="700" height="490" class="img-fluid img-thumbnail rounded-3 shadow-sm w-100" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid mt-3" id="sectionQuienesSomos">
+            <ul class="nav nav-tabs" role="tablist" aria-label="Información sobre la Fundación">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active fw-bold" data-bs-toggle="tab" href="#quienesSomos" role="tab" aria-controls="quienesSomos" id="tabQuienesSomos"><span aria-hidden="true"><i class="fa-solid fa-leaf"></i></span> Quienes Somos</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link fw-bold" data-bs-toggle="tab" href="#mision" role="tab" aria-controls="mision" id="tabMision"><span aria-hidden="true"><i class="fa-solid fa-tree"></i></span> Misión</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link fw-bold" data-bs-toggle="tab" href="#vision" role="tab" aria-controls="vision" id="tabVision"><span aria-hidden="true"><i class="fa-solid fa-paw"></i></span> Visión</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="quienesSomos" class="container tab-pane active" role="tabpanel" aria-labelledby="tabQuienesSomos"><br>
+                <h2 class="fw-bold">Quienes Somos</h2>
+                <p>Somos una organización dedicada a la protección y conservación del Panda Rojo (Ailurus fulgens), una especie en peligro de extinción. Trabajamos junto a comunidades locales, gobiernos y cientificos para asegurar un futuro sostenible para estos animales y su hábitat en el Himalaya y el sudoeste de China.</p>
+              </div>
+              <div id="mision" class="container tab-pane fade" role="tabpanel" aria-labelledby="tabMision"><br>
+                <h2 class="fw-bold">Misión</h2>
+                <p>Proteger el Panda Rojo y sus ecosistema mediante programas de conservación, reforestación educación ambiental y combate del tráfico ilegal. Buscamos reducir la pérdida de habitat y promover la coexistencia armoniosa en el PAnda Rojo y otras especies.</p>
+              </div>
+              <div id="vision" class="container tab-pane fade" role="tabpanel" aria-labelledby="tabVision"><br>
+                <h2 class="fw-bold">Visión</h2>
+                <p>Un mundo donde las poblaciones de pandas rojos prosperen en estado salvaje, sus bosques estén protegidos y las comunidades locales sean aliadas activas en la conservación de la biodiversidad.</p>
+              </div>
+            </div>
+            <div class="row g-2 mb-2 mt-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-success h5"><span aria-hidden="true">🌿</span> Alimentación</h3>
+                            <p class="card-text">Los pandas se alimentan principalmente de bambú, consumiendo hasta 12-15 kg al día. Aunque son carnívoros por clasificación, su dieta es 99% bambú.</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-primary h5"><span aria-hidden="true">🏞️</span> Hábitat</h3>
+                            <p class="card-text">Habitan en las montañas de China central, en bosques templados de hoja ancha y mixtos a altitudes entre 1,200 y 3,400 metros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3"> 
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-body text-center">
+                            <h3 class="card-title h5"><span aria-hidden="true">⚠️</span> Conservación</h3>
+                            <p class="card-text">Están clasificados como vulnerables. Gracias a los esfuerzos de conservación, su población ha aumentado en los últimos años.</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-danger h5"><span aria-hidden="true">❌</span> Extinción</h3>
+                            <p class="card-text">Son muy vulnerables y en peligro de extinción. Hay menos de diez mil ejemplares en el mundo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sectionImages" aria-label="Galería de imágenes del Panda Rojo">
+            <div id="carouselPandas" class="carousel slide" data-bs-ride="carousel" role="region">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPandas" data-bs-slide-to="0" class="active" aria-label="ir a la imagen 1"></button>
+                    <button type="button" data-bs-target="#carouselPandas" data-bs-slide-to="1" aria-label="ir a la imagen 2"></button>
+                    <button type="button" data-bs-target="#carouselPandas" data-bs-slide-to="2" aria-label="ir a la imagen 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://media.istockphoto.com/id/2265163523/es/foto/panda-rojo-sentado-en-una-rama-de-%C3%A1rbol-en-el-bosque.webp?a=1&b=1&s=612x612&w=0&k=20&c=MYYcrQWZ8FnkoaXyTcGkD0-ah-oXKmC_c1uQwC6wVHM="
+                            alt="Panda rojo en su entorno natural de los bosques del Himalaya y China" class="d-block" style="width:100%" loading="lazy">
+                        <div class="carousel-caption">
+                            <p class="fw-bold text-success">Sonrisa afectuosa</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1723425435727-61d67c4d91f3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVkJTIwcGFuZGF8ZW58MHx8MHx8fDA%3D"
+                            alt="Panda rojo sonriendo sobre una rama de árbol" class="d-block" style="width:100%"
+                            loading="lazy">
+                        <div class="carousel-caption">
+                            <p class="fw-bold text-success">Dormilón diurno</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src=" https://images.unsplash.com/photo-1656899367684-6f234eff00a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlZCUyMHBhbmRhfGVufDB8fDB8fHww"
+                            alt="Panda rojo escalando un árbol" class="d-block" style="width:100%" loading="lazy">
+                        <div class="carousel-caption">
+                            <p class="fw-bold text-success">Escalador intrépido</p>
+                        </div>
+                    </div>
+                </div>
+                <button 
+                    class="carousel-control-prev" type="button" data-bs-target="#carouselPandas" data-bs-slide="prev" aria-label="imagen anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button 
+                    class="carousel-control-next" type="button" data-bs-target="#carouselPandas" data-bs-slide="next" aria-label="imagen siguiente">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <div class="container-fluid mt-3">
+                <h2 class="text-center text-danger fw-bold">Panda Rojo</h2>
+                <p class="text-center"> Una de las especies más insólitas del planeta</p>
+            </div>
+        </section> 
+        <section id="sectionCaracteristics" aria-label="Características del Panda Rojo">
+            <div class="accordion">
+                <article class="accordion-item mb-1 border shadow-sm rounded">
+                    <div class="accordion-header">
+                        <a class="accordion-button text-decoration-none p-2" data-bs-toggle="collapse" href="#collapseOne">
+                            <h3 class="mb-0 h5"><span aria-hidden="true">🐾</span> Características físicas</h3>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-bs-parent="#sectionCaracteristics">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 mb-3 mb-md-0 order-md-last">
+                                    <img src="https://images.unsplash.com/photo-1648644828060-3382543d2211?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHJlZCUyMHBhbmRhfGVufDB8fDB8fHww"
+                                    alt="Primer plano de un panda rojo mostrando su espeso pelaje, durmiendo sobre una rama" class="img-fluid rounded" loading="lazy">
+                                </div>
+                                <div class="col-md-8">
+                                    <p>El Panda Rojo (<em>Ailurus fulgens</em>), a menudo llamado "pequeño panda", es un mamífero único que no pertenece a la familia de los osos, sino que es el único miembro vivo de su propia familia taxonómica, los <em>Ailuridae</em>. Su aspecto y comportamiento lo convierten en una de las criaturas más fascinantes de los bosques asiáticos.</p>
+                                    <ul>
+                                        <li><strong>Tamaño:</strong> Entre 50 y 65 cm de longitud corporal.</li>
+                                        <li><strong>Peso:</strong> Entre 3 y 6 kg.</li>
+                                        <li><strong>Pelaje:</strong> Denso, suave y de color rojizo, con zonas oscuras en las patas y el vientre.</li>
+                                        <li><strong>Cola:</strong> Larga y esponjosa, con anillos rojizos y claros que ayudan al equilibrio y a conservar el calor.</li>
+                                        <li><strong>Garras:</strong> Semirretráctiles, fuertes y curvadas, ideales para trepar árboles.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item mb-1 border shadow-sm rounded">
+                    <div class="accordion-header">
+                        <a class="collapsed accordion-button text-decoration-none p-2" data-bs-toggle="collapse" href="#collapseTwo">
+                            <h3 class="mb-0 h5"><span aria-hidden="true">🌍</span> Hábitat y distribución</h3>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-bs-parent="#sectionCaracteristics">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <img src="https://plus.unsplash.com/premium_photo-1695717076798-404f76f121da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVkJTIwcGFuZGF8ZW58MHx8MHx8fDA%3D"
+                                        alt="Primer plano de un panda rojo corriendo en su hábitat" class="img-fluid rounded" loading="lazy">
+                                </div>
+                                <div class="col-md-8">
+                                    <p>El panda rojo es un especialista ecológico que depende estrictamente de ecosistemas de alta montaña. Su supervivencia está intrínsecamente ligada a la presencia de bosques templados frescos y húmedos, donde el bambú crece en abundancia bajo un denso dosel arbóreo. Estos bosques actúan como un refugio climático, dado que su denso pelaje está diseñado para el frío extremo.</p>
+                                    <ul>
+                                        <li><strong>Hábitat:</strong> Bosques templados y montañosos con densa vegetación.</li>
+                                        <li><strong>Altitud:</strong> Entre 2.200 y 4.800 metros sobre el nivel del mar.</li>
+                                        <li><strong>Clima:</strong> Fresco, húmedo y con precipitaciones frecuentes.</li>
+                                        <li><strong>Distribución:</strong> Se encuentra en regiones del Himalaya oriental y el suroeste de China.</li>
+                                        <li><strong>Países:</strong> Nepal, India, Bután, Myanmar y China.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item mb-1 border shadow-sm rounded">
+                    <div class="accordion-header">
+                        <a class="collapsed accordion-button text-decoration-none p-2" data-bs-toggle="collapse" href="#collapseThree">
+                            <h3 class="mb-0 h5"><span aria-hidden="true">🍃</span> Alimentación y comportamiento</h3>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-bs-parent="#sectionCaracteristics">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 mb-3 mb-md-0 order-md-last">
+                                    <img src="https://media.istockphoto.com/id/1263025199/es/foto/panda-rojo-comiendo-hojas-de-bamb%C3%BA.webp?a=1&b=1&s=612x612&w=0&k=20&c=DsSIV1ClpMhIjWV3cKjSSJR0UV6qvwE1ybDspw4HaQ8=" alt="Primer plano de un panda rojo comiendo hojas de bambú sobre una rama" class="img-fluid rounded" loading="lazy">
+                                </div>
+                                <div class="col-md-8">
+                                    <p> El panda rojo es un especialista ecológico; es un animal principalmente herbívoro, aunque su sistema digestivo sigue siendo el de un carnívoro, lo que condiciona gran parte de su comportamiento diario. Al ser un animal de hábitos solitarios y metabolismo lento, pasa entre el 50% y el 75% de su tiempo activo dedicado exclusivamente a buscar y consumir bambú. Pasa la mayor parte de su vida en las alturas, utilizando las copas de los árboles como refugio seguro frente a depredadores.</p>
+                                    <ul>
+                                        <li><strong>Alimentación principal:</strong> Bambú, especialmente hojas y brotes tiernos. </li>
+                                        <li><strong>Dieta complementaria:</strong> Frutas, bayas, raíces, bellotas y ocasionalmente insectos, huevos o pequeños vertebrados </li>
+                                        <li><strong>Actividad:</strong> Más activo durante el amanecer, el atardecer y la noche.</li>
+                                        <li><strong>Comportamiento social:</strong> Generalmente solitario, excepto durante la época de reproducción.</li>
+                                        <li><strong>Desplazamiento:</strong> Excelente trepador gracias a sus garras fuertes y su gran equilibrio.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item mb-1 border shadow-sm rounded">
+                    <div class="accordion-header">
+                        <a class="collapsed accordion-button text-decoration-none p-2" data-bs-toggle="collapse" href="#collapseFour">
+                            <h3 class="mb-0 h5"><span aria-hidden="true">🛡️</span> Estado de conservación</h3>
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="collapse" data-bs-parent="#sectionCaracteristics">
+                        <div class="accordion-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <img src="https://images.unsplash.com/photo-1587543530169-2de7d1f2dcc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHxyZWQlMjBwYW5kYXxlbnwwfHwwfHx8MA%3D%3D" alt="Primer plano de la cara de un panda rojo sobre una rama" class="img-fluid rounded" loading="lazy">
+                                </div>
+                                <div class="col-md-8">
+                                    <p> El panda rojo está clasificado como una especie <strong>en peligro de extinción</strong> en la Lista Roja de la UICN. Su declive poblacional es un reflejo de la fragilidad de los ecosistemas montañosos del Himalaya. A diferencia de otras especies, su baja tasa de reproducción y su dieta especializada los hacen extremadamente vulnerables a cualquier alteración en su entorno natural.</p>
+                                    <ul>
+                                        <li><strong>Categoría de conservación:</strong> Especie vulnerable.</li>
+                                        <li><strong>Principal amenaza:</strong> La destrucción y fragmentación de su hábitat natural.</li>
+                                        <li><strong>Otras amenazas:</strong> Caza furtiva, captura ilegal y cambio climático.</li>
+                                        <li><strong>Población:</strong> Se estima que el número de ejemplares continúa disminuyendo en la naturaleza.</li>
+                                        <li><strong>Medidas de protección:</strong> Creación de áreas protegidas, programas de conservación y control del comercio ilegal.</li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        
+        <section class="container-fluid bg-light p-4 mb-4">
+            <h3 class="mb-2 text-center" >🌿 Proyectos de conservación del panda rojo</h3>
+            <p class="mb-4 text-center">Conoce nuestras inicitivas para protejer el <strong>Panda Rojo</strong> y su hábitat. Cada proyecto está diseñado para abordar una necesidad específica. </p>
+            <div>
+                <div class="row align-items-stretch g-4">
+                <div class="hover col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="https://images.unsplash.com/photo-1758144758843-f38230c713f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDU3fHxyZWQlMjBwYW5kYXxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Card 1" 
+                            class="card-img-top view-details"
+                            data-product="detalle1"
+                            style="cursor:pointer">
+                        <div class="card-body">
+                            <h5 class="text-danger">🎋 Proyecto 1: Reforestación de Bambú</h5>
+                            <p>Restauración de corredores de Bambú en el Himalaya para garantizar la alimentación del Panda Rojo.</p>
+                            <button class="btn btn-danger view-details d-block mx-auto" data-product="detalle1"><i class="fa-solid fa-eye"></i> Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="https://images.unsplash.com/photo-1631693713833-16cbf827c42e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJlZCUyMHBhbmRhfGVufDB8fDB8fHww"
+                            alt="Card 2" 
+                            class="card-img-top view-details"
+                            data-product="detalle2"
+                            style="cursor:pointer">
+                        <div class="card-body">
+                            <h5 class="text-danger">📡​ Proyecto 2: Monitoreo con GPS</h5>
+                            <p>Seguimiento satelital y cámaras trampa para estudiar los patrones de movimiento y comportamiento del Panda Rojo.</p>
+                            <button class="btn btn-danger view-details d-block mx-auto" data-product="detalle2"><i class="fa-solid fa-eye"></i> Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="https://images.unsplash.com/photo-1681026787062-a584ea2e8d13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHJlZCUyMHBhbmRhfGVufDB8fDB8fHww"
+                            alt="Card 3" 
+                            class="card-img-top view-details"
+                            data-product="detalle3"
+                            style="cursor:pointer">
+                        <div class="card-body">
+                            <h5 class="text-danger">🍀 Proyecto 3: Educación Ambiental</h5>
+                            <p>Talleres en comunidades locales para fomentar la coexistencia y reducir el conflicto humano-panda y combatir la caza furtiva.</p>
+                            <button class="btn btn-danger view-details d-block mx-auto" data-product="detalle3"><i class="fa-solid fa-eye"></i> Mas información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sectionDonation" class="mt-3 bg-danger bg-opacity-25 p-2 rounded">
+            <div class="donation container-fluid bg-danger text-center text-white p-4 ">
+                <div class="fs-5" ><i class="fa-solid fa-paw"></i> <i class="fa-solid fa-heart"></i> <i class="fa-solid fa-tree"></i></div>
+                <h2>Protege el Panda Rojo</h2> 
+                <p>Tu donación ayuda a protejer una especie única</p>
+            </div>
+            <div class="form">
+                <form action="/action_page.php" class="needs-validation" novalidate>
+
+                    <div class="form-floating mt-2 mb-2">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]{2,30}$" title="Letras y espacios (2-30 caracteres)" aria-describedby="errorName" required>
+                        <label for="name"><i class="fa-solid fa-user"></i> Nombre</label>
+                        <div id="errorName" class="invalid-feedback text-start ps-2">
+                            Por favor, introduce un nombre válido (solo letras, entre 2 y 30 caracteres con espacios).
+                        </div>
+                    </div>
+                    <div class="form-floating mt-2 mb-2">                        
+                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" pattern="^[A-Za-zñÑáéíóúÁÉÍÓÚüÜ\s]{2,40}$" title="Letras y espacios (2-40 caracteres)" aria-describedby="errorSurname" required>
+                        <label for="surname"><i class="fa-solid fa-user-group"></i> Apellidos</label>
+                        <div id="errorSurname" class="invalid-feedback text-start ps-2">
+                            Por favor, introduce apellidos válidos (solo letras, entre 2 y 40 caracteres con espacios).
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3 mt-2">                        
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]{2,}$" title="Introduce un correo electrónico válido (ej: name@domain.com)" aria-describedby="errorEmail" required>
+                        <label for="email"><i class="fa-solid fa-envelope"></i> E-mail</label>
+                        <div id="errorEmail" class="invalid-feedback text-start ps-2">
+                            Por favor, introduce un correo electrónico válido (ej: name@domain.com sin espacios).
+                        </div>
+                    </div>
+                    <div class="donation mt-md-4 mb-3">
+                        <h3><i class="fa-solid fa-hand-holding-heart fw-bold"></i> Elije tu aportación</h3>
+                        <div class="bg-warning bg-opacity-25 p-3 rounded">
+
+                            <div class="d-flex justify-content-around gap-2 mt-2">
+                                <button class="btn btn-danger fw-bold" type="button" aria-label="Donar 10€">10€</button>
+                                <button class="btn btn-danger fw-bold" type="button" aria-label="Donar 25€">25€</button>
+                                <button class="btn btn-danger fw-bold" type="button" aria-label="Donar 50€">50€</button>   
+                                <button class="btn btn-danger fw-bold" type="button" aria-label="Donar 100€">100€</button>   
+                                <button class="btn btn-danger fw-bold" type="button" aria-label="Donar 200€">200€</button>   
+                            </div>
+                            <div class="mt-3 align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" name="tip-toggle" id="tipToggle" aria-controls="otherAmount" aria-expanded="false">
+                                <label class="form-check-label me-2" for="tipToggle"><span aria-hidden="true">💰</span> Otra cantidad:</label>
+                                <div id="otherAmount" class="hide d-inline-block">
+                                    <div class="input-group input-group-sm">
+                                        <input type="number" name="tip-amount" id="tipAmount" class="form-control d-inline-block w-auto"
+                                        step="10.0" placeholder="Ej: 75" style="width: 80px;" aria-label="Cantidad de la donación en Euros">
+                                        <span class="input-group-text bg-danger text-light border-danger fw-bold">€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-danger small mt-2 mb-0"><i class="fa-solid fa-circle-info"></i> Marca "Otra cantidad" para donar tu propio importe.</p>
+                        </div>    
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 mb-2">
+                        <button type="submit" class="btn btn-donate  w-50 fw-bold"><i class="fa-solid fa-heart"></i> Donar Ahora</button>
+                        <button type="reset" class="btn btn-reset w-50 fw-bold"> <i class="fa-solid fa-eraser"></i> Limpiar</button>
+                    </div>
+                    <p class="text-center mt-2"><span aria-hidden="true">🌿 </span>Red Panda Fundation · Donación segura · Gracias por su colaboración</p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-danger text-white mt-3 p-4">
+        <section class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3 ">
+                    <h4 class="text-center text-md-start fw-bold mb-3 h5">FUNDACION PANDA ROJO</h4>
+                    <p class="mb-2"><span aria-hidden="true"><i class="fa-solid fa-house-crack"></i></span> C/ Conservació, 123 - 08080 Barcelona</p>
+                    <p class="mb-2"><span aria-hidden="true"><i class="fa-solid fa-phone me-2"></i></span> +34 93 123 45 67</p>
+                    <p class="mb-3"><span aria-hidden="true"><i class="fa-solid fa-envelope me-2"></i></span> info@redpanda.org</p>
+                    <div class="d-flex justify-content-center ">
+                        <a href="#sectionDonation" class="btn btn-danger bg-white text-danger btn-sm mb-3 fw-bold btn-partner" role="button" aria-label="Hazte socio de la fundación"> Hazte Socio</a>
+                    </div>
+                </div>             
+                <div class="col-12 col-md-3">
+                    <h4 class="fw-bold mb-3 h6 text-center">ENLACES</h4>
+                    <a href="#sectionQuienesSomos" class="text-decoration-none text-white d-block text-center mb-2">Quienes Somos</a>
+                    <a href="#sectionImages" class="text-decoration-none text-white d-block text-center mb-2">Imagenes</a>
+                    <a href="#sectionCaracteristics" class="text-decoration-none text-white d-block text-center mb-2">Características</a>
+                    <a href="#sectionDonation" class="text-decoration-none text-white d-block text-center mb-3">Donaciones</a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h4 class="fw-bold mb-3 h6 text-center">PROYECTOS</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-center"><a class="text-decoration-none text-white" href="https://redpandanetwork.org" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🐾</span> Red Panda Network</a></li>
+                        <li class="mb-2 text-center"><a class="text-decoration-none text-white" href="https://www.worldwildlife.org/species/red-panda" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🐼</span> World Wildlife Fund</a></li>
+                        <li class="mb-2 text-center"><a class="text-decoration-none text-white" href="https://www.iucnredlist.org" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🏛️</span> IUCN Red List</a></li>
+                        <li class="mb-2 text-center"><a class="text-decoration-none text-white" href="https://rizomebamboo.com/reforestation/" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">🎋</span> Bambu Reforestation</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h4 class="fw-bold mb-3 h6 text-center">SÍGUENOS</h4>
+                    <div class="d-flex justify-content-center gap-2 mb-4">
+                        <a href="#" aria-label="Visita nuestro perfil de Facebook" class="text-white border border-light rounded p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px; text-decoration: none;">
+                            <i class="fa-brands fa-facebook-f" loading="lazy"  aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Visita nuestro perfil de Twitter" class="text-white border border-light rounded p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px; text-decoration: none;">
+                            <i class="fa-brands fa-twitter" loading="lazy"  aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Visita nuestro perfil de Instagram" class="text-white border border-light rounded p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px; text-decoration: none;">
+                            <i class="fa-brands fa-instagram" loading="lazy"  aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Visita nuestro canal de YouTube" class="text-white border border-light rounded p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px; text-decoration: none;">
+                            <i class="fa-brands fa-youtube" loading="lazy"  aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <form action="/action_page.php" class="needs-validation" novalidate>
+                            <label for="newsletterEmail" class="newsletter fw-bold mb-3 text-center d-block">  NEWSLETTER</label>
+                            <div class="input-group input-group-sm mb-3 gap-2 mt-2">                        
+                                <input type="text" class="form-control" id="newsletterEmail" name="newsletter-email" placeholder="✉️ E-mail" pattern="^[^@\s]+@[^@\s]+\.[^@\s]{2,}$" title="Introduce un correo electrónico válido (ej: name@domain.com)" aria-label="Introduce tu correo electrónico para suscribirte a nuestro newsletter" required>
+                                <button type="submit" class="btn btn-danger bg-white text-danger fw-bold w-50 btn-subscribe"> Suscribir</button>    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light mt-4">
+            <div class="row pt-2 small text-center text-md-start">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                    <p class="mb-0 text-white">&copy; Red Panda Fundation. Todos los derechos reservados</p>
+                    <div class="legal-links">
+                        <a href="#" class="text-white text-decoration-none me-3">Politica de privacidad</a>
+                        <a href="#" class="text-white text-decoration-none">Términos y condicciones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+        <!-- Contenedor para cookies -->
+        <div id="contenedor-cookies"></div>
+
+        <div class="modal fade" id="descriptionModal" tabindex="-1" aria-labelledby="modalProductLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger text-white">
+                        <h5 class="modal-title" id="modalProductLabel"></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="" class="img-fluid rounded mb-3" style="max-height: 250px; width: 100%; object-fit: cover;">
+                        <div id="descriptionProduct"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="scroll-to-top" id="scrollTopBtn" aria-label="Volver al inicio de la página">
+            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </a>
+</body>
+</html>
